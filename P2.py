@@ -4,7 +4,7 @@ import scipy.stats as st
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("coin_Bitcoin.csv")
+    df = pd.read_csv('coin_Bitcoin.csv')
     df["Price"] = (df["High"] + df["Low"])/2
 
     df100 = df.sample(100, random_state=1)
@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     print("Con confianza de 95% = ", interval2)
 
-    #Confianza=1
-    interval3 = st.norm.interval(1, loc=np.mean(df100["Price"].tolist()), scale=st.sem(df100["Price"].tolist()))
+    #Confianza=0.99
+    interval3 = st.norm.interval(0.99, loc=np.mean(df100["Price"].tolist()), scale=st.sem(df100["Price"].tolist()))
 
-    print("Con confianza de 100% = ", interval3)
+    print("Con confianza de 99% = ", interval3)
