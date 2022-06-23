@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     intervalSt = st.norm.interval(0.99, loc=np.mean(dfSt["Price"].tolist()), scale=st.sem(dfSt["Price"].tolist()))
 
-    print("IDC Bitcoin: ", intervalB, " Variabilidad: ", intervalB[1]-intervalB[0])
-    print("IDC Ethereum: " , intervalA, " Variabilidad: ", intervalA[1]-intervalA[0])
-    print("IDC Dogecoin: ", intervalS, " Variabilidad: ", intervalS[1]-intervalS[0])
-    print("IDC USDCoin: ", intervalSt, " Variabilidad: ", intervalSt[1]-intervalSt[0])
+    print("IDC Bitcoin:", intervalB, " Variabilidad:", intervalB[1]-intervalB[0])
+    print("IDC Ethereum:" , intervalA, " Variabilidad:", intervalA[1]-intervalA[0])
+    print("IDC Dogecoin:", intervalS, " Variabilidad:", intervalS[1]-intervalS[0])
+    print("IDC USDCoin:", intervalSt, " Variabilidad:", intervalSt[1]-intervalSt[0])
