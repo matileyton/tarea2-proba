@@ -27,7 +27,7 @@ for m in range(len(monedas)):
     interval_18 = st.norm.interval(0.99, loc=np.mean(promedios_bc_2018), scale=st.sem(promedios_bc_2018))
     print(interval_18[1] - interval_18[0])
     '''
-
+    
     meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septimebre', 'Octubre', 'Noviembre', 'Diciembre']
     dias_meses = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
