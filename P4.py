@@ -28,7 +28,8 @@ for m in range(len(monedas)):
 
     interval_18 = st.norm.interval(0.95, loc=np.mean(promedios_bc_2018), scale=st.sem(promedios_bc_2018))
     print(f'2018: {interval_18}')
-
+    print('')
+    
 #GRAFICOS PROMEDIOS MENSUALES
 for m in range(len(monedas)):
     csv = 'coin_' + monedas[m] + '.csv'
